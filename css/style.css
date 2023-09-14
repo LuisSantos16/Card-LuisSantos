@@ -1,0 +1,29 @@
+:root{
+    --primary-theme-color: ;
+    --primary-text-color: #fff;
+    --secondary-text-color: ;
+    --primary-shadow-color: ;
+    --light-primary-shadow-color: ;
+    --primary-font-family: ubuntu;
+    --element-spacing: 32px;
+    --elemnt-size: 16px;
+    --border-radius: 16px;
+}
+
+
+body{
+    min-height: 100vh;
+    background-image: url(../img/background.gif);
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-text-color);
+    font-family: var(--primary-font-family);
+    font-size: var(--elemnt-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    
+}
