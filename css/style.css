@@ -1,9 +1,9 @@
 :root{
-    --primary-theme-color: ;
+    --primary-theme-color: black;
     --primary-text-color: #fff;
-    --secondary-text-color: ;
-    --primary-shadow-color: ;
-    --light-primary-shadow-color: ;
+    --secondary-text-color:skyblue ;
+    --primary-shadow-color: rgb(194, 33, 180);
+    --light-primary-shadow-color: rgba(18, 18, 68, 0.26);
     --primary-font-family: ubuntu;
     --element-spacing: 32px;
     --elemnt-size: 16px;
@@ -25,5 +25,72 @@ body{
 }
 
 main{
-    
+    max-width: calc(var(--elemnt-size) * 25);
+    padding: calc(var(--element-spacing) / 2);
+    margin: calc(var(--element-spacing) / 2);
+    background-color: var(--light-primary-shadow-color);
+    backdrop-filter: blur(var(--elemnt-size));
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 calc(var(--elemnt-size) * 0.25) calc(var(--elemnt-size) * 0.125) var(--primary-shadow-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(var(--element-spacing) / 2);
+}
+
+img{
+    width: calc(var(--elemnt-size) * 12.5);
+    height: calc(var(--elemnt-size) * 12.5);
+    border-radius: 50%;
+    box-shadow: 0 0 calc(var(--elemnt-size) * 0.5) calc(var(--elemnt-size) * 0.25) var(--primary-shadow-color);
+    display: block;
+}
+
+h1,
+h2,
+p{
+    margin: 0;
+}
+
+h2,
+span{
+    color: var(--secondary-text-color);
+    font-weight: 400;
+}
+
+h1{
+    font-size: calc(var(--elemnt-size) * 1.50);
+}
+
+h2{
+    font-size: calc(var(--elemnt-size) * 1.20);
+}
+
+p{
+    font-size: calc(var(--elemnt-size));
+    text-align: center;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: calc(var(--element-spacing) / 2);
+}
+
+.skill{
+    padding: 0.30rem 1rem;
+    background-color: var(--primary-theme-color);
+    border-radius: var(--border-radius);
+    gap: calc(var(--elemnt-size) * 0.75);
+    font-weight: 700;
+}
+
+a{
+    all: unset;
+    color: var(--primary-text-color);
 }
